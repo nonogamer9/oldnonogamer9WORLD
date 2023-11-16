@@ -203,6 +203,27 @@ let userCommands = {
             vid: vid
         });
     },
+	"video": function(vidRaw){
+        var vid = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+        this.room.emit("video", {
+            guid: this.guid,
+            vid: vid
+        });
+    },
+	"img": function(vidRaw){
+        var vid = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+        this.room.emit("img", {
+            guid: this.guid,
+            vid: vid
+        });
+    },
+	"iframe": function(vidRaw){
+        var vid = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+        this.room.emit("iframe", {
+            guid: this.guid,
+            vid: vid
+        });
+    },
   css:function(...txt){
       this.room.emit('css',{
           guid:this.guid,
