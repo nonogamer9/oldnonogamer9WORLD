@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.min.css">
       <meta property="og:site_name" content="BonziWORLD">
       <meta property="og:keywords" content="BonziWORLD, bonziworld, bzw, BZW, BonziWorld, Bonziworld, bonziWORLD">
+        <meta property="og:description" content="Leading the industry in gorilla-based chat clients!" />
 	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
@@ -81,6 +82,26 @@
 				<a href="#" onClick="window.location.reload()">Reload?</a><br>
 				<br>
 				Room ID - <span class="room_id">???</span><br>
+			</div>
+		</div>
+		<div id="page_ban" class="page" style="display:none">
+			<div id="ban_cont" class="message_cont">
+				<img src="./img/ban/logo.png"><br>
+				<br>
+				<h1>You got banned!</h1><br>
+				<br>
+				<b>Why? </b><span id="ban_reason"></span><br>
+                                You will no longer join Public Rooms.<br>
+				<b>When is it over? </b><span id="ban_end"></span><br>
+			</div>
+		</div>
+		<div id="page_kick" class="page" style="display:none">
+			<div id="kick_cont" class="message_cont">
+				<img src="./img/ban/logo.png"><br>
+				<br>
+				<h1>You got kicked!</h1><br>
+				<br>
+				<b>Why? </b><span id="ban_reason"></span><br>
 			</div>
 		</div>
 
